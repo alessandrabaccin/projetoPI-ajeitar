@@ -33,31 +33,32 @@
                 <div class="inputs">
                     <div class="inputs">
                         <span class="span_text">CNPJ:</span> <br>
-                        <input class="input" type="email" id="cpf_input" placeholder="**************">
+                        <input class="input" type="text" id="cpf_input" pattern="(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})" placeholder="**************">
                         
                     </div>
                     
                 </span>
 
-                <span id="spnGerente">
-                
-                <span class="span_text">E-mail:</span> <br>
-                <input class="input" type="email" id="email_input" placeholder="seuEmail@email.com">
+                <span id="spnGerente" style="display: none;">
 
-                </div>
+                    <span class="span_text">E-mail:</span> <br>
+                    <input class="input" type="email" id="email_input" placeholder="seuEmail@email.com">
+    
+                    </div>
+    
+                    <div class="inputs">
+                        <span class="span_text">Sua senha:</span> <br>
+                        <input class="input" type="password" id="senha_input" placeholder="********">
+    
+                    </div>
+                    <div class="inputs">
+                        <span class="span_text">Confirme sua senha:</span> <br>
+                        <input class="input" type="password" id="confirmacao_senha_input" placeholder="********">
+    
+                    </div>
 
-                <div class="inputs">
-                    <span class="span_text">Sua senha:</span> <br>
-                    <input class="input" type="password" id="senha_input" placeholder="********">
-
-                </div>
-                <div class="inputs">
-                    <span class="span_text">Confirme sua senha:</span> <br>
-                    <input class="input" type="password" id="confirmacao_senha_input" placeholder="********">
-
-                </div>
-            
                 </span>
+                
 
                 <div class="botao_cadastro">
                     <button class="btnEntrar" onclick="cadastrar()">Cadastrar-se</button>
